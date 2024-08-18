@@ -1,3 +1,4 @@
+// https://chatgpt.com/share/d8dfefae-2037-4f5d-8474-667b2a397cb7
 @mixin media($query) {
     @if $query ==tabletAndUp {
         @media (min-width: 50rem) {
