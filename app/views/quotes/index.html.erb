@@ -1,12 +1,15 @@
+<%= turbo_stream_from "quotes" %>
 <main class="container">
   <div class="header">
     <h1>Quotes</h1>
+    <!-- 下をクリックすると --> 
     <%= link_to "New quote",
                 new_quote_path,
                 class: "btn btn--primary",
                 data: { turbo_frame: dom_id(Quote.new) } %>
   </div>
-
+  
+  <!-- これにフォームが挿入される -->
   <%= turbo_frame_tag Quote.new %>
   <%= render @quotes %>
 </main>
